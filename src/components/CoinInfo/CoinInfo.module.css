@@ -1,0 +1,8 @@
+.container {
+  width: 75vw;
+}
+@media (max-width: 991.98px) {
+  .container {
+    width: 95vw;
+  }
+}

@@ -1,0 +1,14 @@
+.title {
+  flex: 1;
+  color: gold;
+  font-weight: 100;
+  cursor: pointer;
+}
+.select {
+  color: white !important;
+  height: 35px;
+  width: 80px;
+  outline-color: white;
+  background-color: #14161a;
+  border-radius: 6px;
+}

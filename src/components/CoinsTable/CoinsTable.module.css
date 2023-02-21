@@ -1,0 +1,95 @@
+.tableContainer {
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+}
+.tableContainer h3 {
+  text-align: center;
+  color: gold;
+}
+.tableContainer input {
+  background-color: #14161a;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.table th {
+  background-color: white;
+  color: #14161a;
+}
+.table tbody tr {
+  cursor: pointer;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(255, 217, 0, 0.909);
+  color: black;
+}
+
+/* .table tbody tr:nth-child(even) {
+  background-color: transparent;
+} */
+
+/*responsive*/
+
+@media (max-width: 991.98px) {
+  .table thead {
+    display: none;
+  }
+  .table .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 15px;
+  }
+
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+  .table td::before {
+    content: attr(data-label);
+
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+  td:first-child {
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  .table td::before {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
